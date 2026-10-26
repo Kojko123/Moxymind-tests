@@ -1,0 +1,41 @@
+# Secrets — NEVER commit
+.env
+.env.local
+.env.*.local
+
+# Node / Mastra
+node_modules/
+.mastra/
+dist/
+*.log
+
+# .NET build output
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Test output
+TestResults/
+test-results/
+playwright-report/
+
+# Playwright local caches (produced by the C# .csproj / npm Playwright install)
+.playwright/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Claude Code — personal overrides stay local; shared settings.json would still be committed
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
